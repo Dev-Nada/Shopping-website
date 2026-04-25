@@ -168,7 +168,8 @@ p {
 }
 .advantage{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
     gap: 10px ;
     padding-bottom: 20px;
     padding-top: 5px;
@@ -270,6 +271,16 @@ footer span,footer p{
     .best-item img{
         padding-top: 8px;
         padding-bottom: 8px ;
+    }
+    #About p{
+        line-height: 1.5;
+    }
+    nav{
+        margin: 3 auto;
+        width: 98%;
+    }
+    .advantage{
+        gap: 5px;
     }
 
 }
