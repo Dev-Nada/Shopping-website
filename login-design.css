@@ -14,16 +14,6 @@ body {
   src: url('Philosopher-Regular.ttf');
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-}
-
 .login-page{
     background-image: url("brownish-pink-bg.png");
     background-size:cover;
@@ -49,10 +39,6 @@ header{
     max-width: 500px; 
     text-align: center;
     gap:15px;
-
-    word-wrap: break-word;
-    display: flex;
-    flex-direction: column;
 
 }
 

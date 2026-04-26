@@ -1,185 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Makeup Shop</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" ccontent="width=device-width ,initial-scale=1.0" />
+    <title>Makeup Shop</title>
+    <link rel="stylesheet" href="stylehome.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="drop">
+          <a href="generalcat.html">Category</a>
+          <ul class="drop-content">
+            <li>
+              <a href="">Dresses</a>
+            </li>
+            <li>
+              <a href="">Accessories</a>
+            </li>
+            <li>
+              <a href="New Text Document.html">Makeup</a>
+            </li>
+            <li>
+              <a href="shoes.html">Shoes & Bags</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="cart.html">Basket</a>
+        </li>
+        <li>
+          <a href="">Contact </a>
+        </li>
+      </ul>
+    </nav>
 
-  <!-- Banner -->
-  <section class="banner">
-    <h1>Glow Like Never Before ✨</h1>
-  </section>
+    <section class="banner">
+      <h1>Glow Like Never Before</h1>
+    </section>
 
-  <!-- Categories -->
-  <section class="categories">
-    <button onclick="filterProducts('all')">All</button>
-    <button onclick="filterProducts('face')">Face</button>
-    <button onclick="filterProducts('eyes')">Eyes</button>
-    <button onclick="filterProducts('lips')">Lips</button>
-    <button onclick="filterProducts('perfume')">Perfume</button>
-  </section>
+    <section class="categories">
+      <button onclick="filter('all')">All</button>
+      <button onclick="filter('face')">Face</button>
+      <button onclick="filter('eyes')">Eyes</button>
+      <button onclick="filter('lips')">Lips</button>
+      <button onclick="filter('perfume')">Perfume</button>
+      <div id="cart-icon">
+        <a href="cart.html">
+          <img src="img/shopping-bag.png" class="cart" />
+        </a>
 
-  <!-- Products -->
-  <section class="products">
+        <span class="num-cart"></span>
+      </div>
+    </section>
 
-    <div class="product face">
-      <img src="images/3.jpeg">
-      <h3>ILIA Foundation</h3>
-      <p>$15</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product face">
-      <img src="images/plasher.jpeg">
-      <h3>PIASHER</h3>
-      <p>$15</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
+    <section class="products">
+      <div class="product face">
+        <img src="images/3.jpeg" />
+        <h3 class="title">ILIA Foundation</h3>
+        <p class="price">$15</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product face">
+        <img src="images/plasher.jpeg" />
+        <h3 class="title">PIASHER</h3>
+        <p class="price">$15</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
 
-    <div class="product face">
-     <img src="images/2.jpeg">
-     <h3>maybelline consiler</h3>
-     <p>$5</p>
-     <button oneclick="addToCart()">Add to cart</button>
-    </div>
-<div class="product face">
-     <img src="images/19.jpeg">
-     <h3>POWDR-MAC</h3>
-     <p>$5</p>
-     <button oneclick="addToCart()">Add to cart</button>
-    </div>
-<div class="product face">
-     <img src="images/27.jpeg">
-     <h3>POWDR-CHANAL</h3>
-     <p>$20</p>
-     <button oneclick="addToCart()">Add to cart</button>
-    </div>
+      <div class="product face">
+        <img src="images/2.jpeg" />
+        <h3 class="title">maybelline consiler</h3>
+        <p class="price">$5</p>
+        <button onclick="addToCart(event)">Add to cart</button>
+      </div>
+      <div class="product face">
+        <img src="images/19.jpeg" />
+        <h3 class="title">POWDR-MAC</h3>
+        <p class="price">$5</p>
+        <button onclick="addToCart(event)">Add to cart</button>
+      </div>
+      <div class="product face">
+        <img src="images/27.jpeg" />
+        <h3 class="title">POWDR-CHANAL</h3>
+        <p class="price">$20</p>
+        <button onclick="addToCart(event)">Add to cart</button>
+      </div>
 
-    <div class="product eyes">
-      <img src="images/66.jpeg">
-      <h3>DIORSHOW Mascara</h3>
-      <p>$10</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product eyes">
-      <img src="images/112.jpeg">
-      <h3>SKY Mascara</h3>
-      <p>$20</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
+      <div class="product eyes">
+        <img src="images/66.jpeg" />
+        <h3 class="title">DIORSHOW Mascara</h3>
+        <p class="price">$10</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product eyes">
+        <img src="images/112.jpeg" />
+        <h3 class="title">SKY Mascara</h3>
+        <p class="price">$20</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
 
-<div class="product eyes">
-      <img src="images/ee.jpeg">
-      <h3>EYESHADOW</h3>
-      <p>$10</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product eyes">
-      <img src="images/tt.jpeg">
-      <h3>EYESHADOW</h3>
-      <p>$15</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
+      <div class="product eyes">
+        <img src="images/ee.jpeg" />
+        <h3 class="title">EYESHADOW</h3>
+        <p class="price">$10</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product eyes">
+        <img src="images/tt.jpeg" />
+        <h3 class="title">EYESHADOW</h3>
+        <p class="price">$15</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
 
-<div class="product eyes">
-      <img src="images/eyliner.jpeg">
-      <h3>EYE-LINER</h3>
-      <p>$10</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
+      <div class="product eyes">
+        <img src="images/eyliner.jpeg" />
+        <h3 class="title">EYE-LINER</h3>
+        <p class="price">$10</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
 
+      <div class="product lips">
+        <img src="images/8.jpeg" />
+        <h3 class="title">Matte Lip-liner</h3>
+        <p class="price">$12</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product lips">
+        <img src="images/55.jpeg" />
+        <h3 class="title">Mc-rouge</h3>
+        <p class="price">$5</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product lips">
+        <img src="images/kiko.jpeg" />
+        <h3 class="title">KiKo-Melano</h3>
+        <p class="price">$4</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product lips">
+        <img src="images/5.jpeg" />
+        <h3 class="title">SHEGLAM-LIP</h3>
+        <p class="price">$6</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product lips">
+        <img src="images/88.jpeg" />
+        <h3 class="title">BENE-TENT</h3>
+        <p class="price">$7</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product lips">
+        <img src="images/77.jpeg" />
+        <h3 class="title">LIP-GLASS</h3>
+        <p class="price">$8</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product perfume">
+        <img src="images/a.jpeg" />
+        <h3 class="title">Miss Dion</h3>
+        <p class="price">$10</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product perfume">
+        <img src="images/b.jpeg" />
+        <h3 class="title">S_Y PERFUME</h3>
+        <p class="price">$12</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product perfume">
+        <img src="images/c.jpeg" />
+        <h3 class="title">IRRESISTIBLE</h3>
+        <p class="price">$15</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product perfume">
+        <img src="images/d.jpeg" />
+        <h3 class="title">BURBERRY</h3>
+        <p class="price">$15</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
 
+      <div class="product perfume">
+        <img src="images/e.jpeg" />
+        <h3 class="title">COCO-PERFUM</h3>
+        <p class="price">$16</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product perfume">
+        <img src="images/f.jpeg" />
+        <h3 class="title">MON-PARIS</h3>
+        <p class="price">$20</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product perfume">
+        <img src="images/g.jpeg" />
+        <h3 class="title">H-O_PERFume</h3>
+        <p class="price">$10</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
 
-    <div class="product lips">
-      <img src="images/8.jpeg">
-      <h3>Matte Lip-liner</h3>
-      <p>$12</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-    <div class="product lips">
-      <img src="images/55.jpeg">
-      <h3>Mc-rouge</h3>
-      <p>$5</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-    <div class="product lips">
-      <img src="images/kiko.jpeg">
-      <h3>KiKo-Melano</h3>
-      <p>$4</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-    <div class="product lips">
-      <img src="images/5.jpeg">
-      <h3>SHEGLAM-LIP</h3>
-      <p>$6</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-    <div class="product lips">
-      <img src="images/88.jpeg">
-      <h3>BENE-TENT</h3>
-      <p>$7</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-    <div class="product lips">
-      <img src="images/77.jpeg">
-      <h3>LIP-GLASS</h3>
-      <p>$8</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-    <div class="product perfume">
-      <img src="images/a.jpeg">
-      <h3>Miss Dion</h3>
-      <p>$10</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product perfume">
-      <img src="images/b.jpeg">
-      <h3>S_Y PERFUME</h3>
-      <p>$12</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product perfume">
-      <img src="images/c.jpeg">
-      <h3>IRRESISTIBLE</h3>
-      <p>$15</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product perfume">
-      <img src="images/d.jpeg">
-      <h3>BURBERRY</h3>
-      <p>$15</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
+      <div class="product perfume">
+        <img src="images/h.jpeg" />
+        <h3 class="title">PRADA_PERFume</h3>
+        <p class="price">$10</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+    </section>
+    <footer>
+      <div class="contact">
+        <span>connect with LADY BOUTIQE :</span>
+        <a href="#contact us">
+          <button class="connect-btn">✉ Contact us</button>
+        </a>
+      </div>
+      <div class="social">
+        <a href="#"
+          ><img src="img/face icon.jpeg" alt="Facebook" class="social-media"
+        /></a>
+        <a href="#"
+          ><img src="img/insta icon.jpeg" alt="Instagram" class="social-media"
+        /></a>
+        <a href="#"
+          ><img src="img/X-icon.jpeg" alt="Twitter" class="social-media"
+        /></a>
+        <a href="#"
+          ><img
+            src="img/WhatsApp icon.jpeg"
+            alt="whatsapp"
+            class="social-media"
+        /></a>
+      </div>
 
-<div class="product perfume">
-      <img src="images/e.jpeg">
-      <h3>COCO-PERFUM</h3>
-      <p>$16</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product perfume">
-      <img src="images/f.jpeg">
-      <h3>MON-PARIS</h3>
-      <p>$20</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-<div class="product perfume">
-      <img src="images/g.jpeg">
-      <h3>H-O_PERFume</h3>
-      <p>$10</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
+      <p>© 2026 Lady Boutique. All rights reserved.</p>
+    </footer>
 
-<div class="product perfume">
-      <img src="images/h.jpeg">
-      <h3>PRADA_PERFume</h3>
-      <p>$10</p>
-      <button onclick="addToCart()">Add to Cart</button>
-    </div>
-
-  </section>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
