@@ -15,6 +15,16 @@ body{
   src: url('Philosopher-Regular.ttf');
 }
 
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
 header{
     
     width: 100%;
@@ -65,6 +75,10 @@ div{
     text-align: left;
     gap:15px;
     margin-bottom: 35px;
+
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
 
 }
 
