@@ -1,149 +1,139 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LADY BOUTIQUE</title>
+    <title>Shoes & Bags - Lady Boutique</title>
     <link rel="stylesheet" href="stylehome.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li class="drop">
-          <a href="generalcat.html">Category</a>
-          <ul class="drop-content">
-            <li>
-              <a href="">Dresses</a>
-            </li>
-            <li>
-              <a href="">Accessories</a>
-            </li>
-            <li>
-              <a href="New Text Document.html">Makeup</a>
-            </li>
-            <li>
-              <a href="shoes.html">Shoes & Bags</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="cart.html">Basket</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="navbar-placeholder"></div>
+
+    <section style="margin: 20px auto; width: 80%; text-align: center;">
+      <h2>Shoe Size Guide</h2>
+      <table border="1" style="width: 100%; border-collapse: collapse; background-color: #fff; margin-top:10px;">
+          <tr style="background-color: #ddbeb8;">
+              <th>US Size</th>
+              <th>UK Size</th>
+              <th>Europe Size</th>
+              <th>Foot Length (cm)</th>
+          </tr>
+          <tr><td>6</td><td>4</td><td>37</td><td>23.5</td></tr>
+          <tr><td>7</td><td>5</td><td>38</td><td>24.1</td></tr>
+          <tr><td>8</td><td>6</td><td>39</td><td>25.1</td></tr>
+      </table>
+    </section>
+
     <section class="products">
       <div class="product">
-        <img src="high heels.jpeg" />
-        <h3 class="title">High Heels</h3>
-        <p class="price">$50</p>
+        <img src="high heels.jpeg" alt="High Heels"/>
+        <p class="title">High Heels</p>
+        <p class="price">$50.00</p>
+        <p class="star">★ ★ ★ ★ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="High Heels2.jpeg" />
-        <h3 class="title">High Heels</h3>
-        <p class="price">$45</p>
+        <img src="High Heels2.jpeg" alt="High Heels"/>
+        <p class="title">Classic High Heels</p>
+        <p class="price">$45.00</p>
+        <p class="star">★ ★ ★ ☆ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="High Heels3.jpeg" />
-        <h3 class="title">High Heels</h3>
-        <p class="price">$55</p>
+        <img src="High Heels3.jpeg" alt="High Heels"/>
+        <p class="title">Strap High Heels</p>
+        <p class="price">$55.00</p>
+        <p class="star">★ ★ ★ ★ ★</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="High Heels4.jpeg" />
-        <h3 class="title">High Heels</h3>
-        <p class="price">$60</p>
+        <img src="High Heels4.jpeg" alt="High Heels"/>
+        <p class="title">Elegant Heels</p>
+        <p class="price">$60.00</p>
+        <p class="star">★ ★ ★ ★ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes1.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
-        <p class="price">$35</p>
+        <img src="Shoes1.jpeg" alt="Sports Shoes"/>
+        <p class="title">Pink Sports Shoes</p>
+        <p class="price">$35.00</p>
+        <p class="star">★ ★ ★ ☆ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes2.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
-        <p class="price">$40</p>
+        <img src="Shoes2.jpeg" alt="Sports Shoes"/>
+        <p class="title">White Sports Shoes</p>
+        <p class="price">$40.00</p>
+        <p class="star">★ ★ ★ ★ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes3.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
-        <p class="price">$32</p>
+        <img src="Shoes3.jpeg" alt="Sports Shoes"/>
+        <p class="title">Running Shoes</p>
+        <p class="price">$32.00</p>
+        <p class="star">★ ★ ★ ☆ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes4.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
-        <p class="price">$30</p>
+        <img src="Shoes4.jpeg" alt="Sports Shoes"/>
+        <p class="title">Casual Sneakers</p>
+        <p class="price">$30.00</p>
+        <p class="star">★ ★ ★ ★ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag6.jpeg" />
-        <h3 class="title">Modern Bag</h3>
-        <p class="price">$20</p>
+        <img src="Bag6.jpeg" alt="Modern Bag"/>
+        <p class="title">Modern Bag</p>
+        <p class="price">$20.00</p>
+        <p class="star">★ ★ ★ ☆ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag2.jpeg" />
-        <h3 class="title">Modern Bag</h3>
-        <p class="price">$30</p>
+        <img src="Bag2.jpeg" alt="Modern Bag"/>
+        <p class="title">Brown Modern Bag</p>
+        <p class="price">$30.00</p>
+        <p class="star">★ ★ ★ ★ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag1.jpeg" />
-        <h3 class="title">Black Bag</h3>
-        <p class="price">$25</p>
+        <img src="Bag1.jpeg" alt="Black Bag"/>
+        <p class="title">Black Bag</p>
+        <p class="price">$25.00</p>
+        <p class="star">★ ★ ★ ☆ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag3.jpeg" />
-        <h3 class="title">Burgundy Bag</h3>
-        <p class="price">$18</p>
+        <img src="Bag3.jpeg" alt="Burgundy Bag"/>
+        <p class="title">Burgundy Bag</p>
+        <p class="price">$18.00</p>
+        <p class="star">★ ★ ★ ★ ☆</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag7.jpeg" />
-        <h3 class="title">White Bag</h3>
-        <p class="price">$40</p>
+        <img src="Bag7.jpeg" alt="White Bag"/>
+        <p class="title">White Bag</p>
+        <p class="price">$40.00</p>
+        <p class="star">★ ★ ★ ★ ★</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
     </section>
+
     <footer>
       <div class="contact">
-        <span>connect with LADY BOUTIQE :</span>
+        <span>Connect with LADY BOUTIQUE:</span>
         <a href="#contact us">
           <button class="connect-btn">✉ Contact us</button>
         </a>
       </div>
       <div class="social">
-        <a href="#"
-          ><img src="img/face icon.jpeg" alt="Facebook" class="social-media"
-        /></a>
-        <a href="#"
-          ><img src="img/insta icon.jpeg" alt="Instagram" class="social-media"
-        /></a>
-        <a href="#"
-          ><img src="img/X-icon.jpeg" alt="Twitter" class="social-media"
-        /></a>
-        <a href="#"
-          ><img
-            src="img/WhatsApp icon.jpeg"
-            alt="whatsapp"
-            class="social-media"
-        /></a>
+        <a href="#"><img src="img/face icon.jpeg" alt="Facebook" class="social-media" /></a>
+        <a href="#"><img src="img/insta icon.jpeg" alt="Instagram" class="social-media" /></a>
+        <a href="#"><img src="img/X-icon.jpeg" alt="Twitter" class="social-media" /></a>
+        <a href="#"><img src="img/WhatsApp icon.jpeg" alt="whatsapp" class="social-media" /></a>
       </div>
-
       <p>© 2026 Lady Boutique. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

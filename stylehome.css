@@ -24,20 +24,20 @@ nav ul {
     margin: 10 0 auto;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2);
     padding: 8px;
+    align-items: center; /* Keeps items centered vertically */
 }
 nav li {
     text-decoration: none;
     padding: 10px ;
     margin: auto;
-    
 }
-nav ul   li a {
+nav ul li a {
     display: inline-block;
     padding: 10px 20px;
     margin: -10px -10px;
     transition: all 0.4s ease-in-out;
 }
-nav > ul > li  :hover{
+nav > ul > li:hover {
     background-color: #ddbeb8;
     border-radius: 12px;
     box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1);
@@ -50,10 +50,8 @@ nav > ul > li  :hover{
     width: fit-content;
     padding: 0;
     margin: 2px;
-    
 }
 .drop-content li{
-   
     display: block;
 }
 .drop:hover .drop-content{
@@ -86,7 +84,6 @@ a{
     gap: 20px;
 }
 #About {
-    
     font-family:Arial, Helvetica, sans-serif;
     color: black;
     width: 50%;
@@ -94,7 +91,6 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content:center ;
-    
 }
 #About h1 {
     text-align: center;
@@ -110,6 +106,8 @@ a{
     color: black;
     padding-bottom: 20px;
 }
+
+/* BIG BUTTON FOR HERO SECTION ONLY */
 .shop {
     background-color: #2c272c;
     text-align: center;
@@ -120,13 +118,13 @@ a{
     cursor: pointer;
     border-radius: 11px;
     transition: 0.3s ;
-    
 }
 .shop:hover {
     background-color: #333;
     box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1);
     transform: scale(1.1);
 }
+
 .line{
     font-family: sans-serif;
     font-size: 20px;
@@ -150,15 +148,17 @@ a{
 .best-item{
     flex-basis: 280px;
     min-width: 250px;
-    height: 405px;
+    height: 440px; /* Made slightly taller to fit the button */
     border-radius: 12px;
     overflow: hidden;
     background-color: #F4DFDB;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center; /* Centers everything inside */
     box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.1);
     transition: all 0.5s;
+    padding-bottom: 15px;
 }
 .best-item img{
     width: 100%;
@@ -169,8 +169,26 @@ a{
 }
 .best-item p{
     margin: 0;
-    
 }
+
+/* NORMAL SIZED BUTTON FOR HOMEPAGE PRODUCTS */
+.best-item button {
+    background-color: #2c272c;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.best-item button:hover {
+    background-color: #333;
+    box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
 
 .advantage{
     display: flex;
@@ -197,7 +215,7 @@ a{
 .icon-adv{
     width: 50px;
 }
-footer{   /* footer*/
+footer{
     background-color: #362e36;
 }
 .contact{
@@ -218,6 +236,7 @@ footer{   /* footer*/
 footer span,footer p{
     font-size: 20px;
     color: antiquewhite;
+    text-align: center;
 }
 .connect-btn{
     padding: 6px;   
@@ -225,6 +244,8 @@ footer span,footer p{
     font-size: 13px;
     border-radius: 8px;
     transition: 0.3s;
+    cursor: pointer;
+    border: none;
 }
 .connect-btn:hover{
     transform: scale(1.1);
@@ -237,8 +258,7 @@ footer span,footer p{
     margin-left: 20px;
     margin-bottom: 20px;
 }
-/*نهاية صفحة الهوم  --------------------------------------------------- */
-/*قسم اللينكات في صفحة الجينيرال كاتيجوري -----------------------------------------------*/
+
 .icon-home{
     width: 50px;
 }
@@ -246,7 +266,6 @@ footer span,footer p{
     width: 95%;
     margin: 5px auto;
     flex-direction: column;
-    
 }
  .icon-list{
     display: flex;
@@ -273,7 +292,7 @@ footer span,footer p{
     box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
 }
-/* الفيلتر بار اللي فوق في صفحه سلمى*/
+
 .cart-body {   
   background-color: #cbaba5;
   font-family: Arial;
@@ -284,6 +303,7 @@ footer span,footer p{
 
 #cart-icon {
   margin-left: 800px;
+  position: relative;
 }
 #cart-icon:hover{
     transition:0.3s ;
@@ -294,13 +314,14 @@ footer span,footer p{
 }
 .num-cart {
   position: absolute;
-  top: -1px;
-  right: -2px;
+  top: -5px;
+  right: -10px;
   width: 20px;
   height: 20px;
   background-color: #e36aa7;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
   color: antiquewhite;
   display: flex;
   justify-content: center;
@@ -334,15 +355,14 @@ footer span,footer p{
   transform: scale(1.05);
   background-color: #333;
 }
-/*نهاية الفلتر بار------------------------------------- */
-.products{   /*------------------------------------------------الديزاين  لكل صفح الكاتيجوري*/
+
+.products{
     display: flex;
     justify-content: space-around;
     width: 95%;
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 5px;
-   
 }
 .product{
     display: flex;
@@ -355,16 +375,12 @@ footer span,footer p{
     height: 100%;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2);
     gap: 5px;
-
-    
 }
 .product img{
     width: 310px;
     height: 310px;
     border-radius: 10px;
     margin: 5px auto;
-   
-
 }
 .product p{
     font-size: 17px;
@@ -375,15 +391,17 @@ footer span,footer p{
    color: white;
    padding: 15px;
    margin: 20px auto;
-   
+   border: none;
    border-radius: 12px;
+   cursor: pointer;
+   transition: 0.3s;
 }
 .product button:hover{
     background-color: #333;
     box-shadow:0px 5px 15px rgba(0, 0, 0, 0.1);
     transform: scale(1.1);
 }
-/*صفحه الباسكت---------------------------------------*/
+
 .cart-sec { 
   width: 90%;
   height: 100%;
@@ -447,9 +465,8 @@ footer span,footer p{
   color: aliceblue;
   width: 25px;
   border-radius: 7px;
-  border: black;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   font-size: 17px;
 }
 .number {
@@ -491,20 +508,64 @@ footer span,footer p{
   font-size: 15px;
   font-weight: 400;
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
-  transition: all 0.3;
+  transition: all 0.3s;
 }
 .buy-now:hover {
   z-index: 10;
   transform: scale(1.05);
 }
-/*نهاية صفحة الكارت---------------------------------------------------------------------------*/
-@media (max-width:800px){ /*responsive*/
+
+.product:hover, .best-item:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* NEW THEME TOGGLE BUTTON CSS */
+.theme-toggle {
+    padding: 8px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* DARK MODE STYLES */
+body.dark-mode {
+    background-color: #2c272c;
+    color: white;
+}
+body.dark-mode nav ul {
+    background-color: #5a4b5a;
+}
+body.dark-mode a, body.dark-mode p, body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: white;
+}
+body.dark-mode .product, body.dark-mode .best-item {
+    background-color: #4a3f4a;
+    color: white;
+}
+body.dark-mode .theme-toggle {
+    background: white;
+    color: black;
+    border: 2px solid #5a4b5a;
+}
+
+@media (max-width:800px){
      nav li{
         font-size: 14px;
     }
     .About{
         background-image: linear-gradient(#E6B3A8 60%,transparent );
-
         background-color: #ddbeb8;
         min-height: fit-content;
         height: auto;
@@ -532,25 +593,19 @@ footer span,footer p{
     }
     .best-item{
         min-width: 350px;
-        height: 350px;
+        height: auto;
         box-sizing: border-box;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
-    }
-    .best-text{
-        display: flex;
-        flex-direction: column;
-        
-        
     }
     .best-item img{
         height: 230px;
         width: 85%;
         padding-top: 8px;
         padding-bottom: 8px ;
-        
     }
     .line{
         display: flex;
@@ -570,7 +625,6 @@ footer span,footer p{
         gap: 20px;
         font-size: 10px;
         margin-top: 10px;
-
     }
     .categories{
         display: flex;
@@ -584,8 +638,6 @@ footer span,footer p{
         font-size: 10px;
         margin-left: 0;
     }
-
-    
     #cart-icon{
         margin-left: auto;
     }
@@ -594,11 +646,10 @@ footer span,footer p{
         height: auto;
         gap: 8px;
     }
-
     .product img {
        width: 310px;
-         height: 310px;
-        border-radius: 10px;
-        margin: 5px auto;
+       height: 310px;
+       border-radius: 10px;
+       margin: 5px auto;
     }
 }

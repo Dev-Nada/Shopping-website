@@ -1,12 +1,15 @@
-body {
-    font-family:"Philosopher-Regular";
-    font-size:large;
-    line-height: 1.2;
-    margin: auto;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    background-color:white;
-    justify-content: center;
-   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 1.2;
+    background-color: #f4dfdb; /* Fallback color */
+    margin: 0;
 }
 
 @font-face {
@@ -14,19 +17,33 @@ body {
   src: url('Philosopher-Regular.ttf');
 }
 
-.login-page{
+.login-page {
     background-image: url("brownish-pink-bg.png");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: "Philosopher-Regular", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Keeps footer at the bottom */
 }
 
-header{
-    
+header {
     background-color: #bb9992;
     color: white;
     padding: 2rem 0;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* New wrapper to center the login box perfectly */
+.login-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
 
 .login-container {
@@ -35,119 +52,272 @@ header{
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 90%;
-    max-width: 500px; 
+    width: 100%;
+    max-width: 450px; 
     text-align: center;
-    gap:15px;
-
+    padding: 40px 30px;
 }
 
-div{
-    
-    margin: auto;
-    padding: 20px;
-    width:fit-content;
-}
-
-h2{
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-p{
-   text-align: center;
-}
-
-p.terms{
-    font-size: smaller;
-    color:#A67C77
+.login-container h2 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
 form {
-    max-width:800px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding:20px;
-    background: white;
-    box-shadow:0 4px 15px rgb(99, 96, 96);
-    border-radius: 10px;
-    
+    background: transparent;
 }
 
 .form-group {
-  text-align: left; 
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  padding: 0;
-
+    text-align: left; 
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 label {     
-  font-weight: bold;
-  margin: 5px;
-}
-
-input{
-    padding: 5px;
-    margin-bottom: 10px;
-    width: 350px;
-    border: 1px solid #c1b1b1;
-    border-radius: 10px;
-    font-size: 1rem;
-    box-sizing: border-box;
-
-}
-
-button{
-    background-color:rgb(140, 119, 119);
-    color:white;
-    padding:10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor:pointer;
-    font-size: 1rem;
     font-weight: bold;
-    width: 40%;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
 }
 
-button:hover{
-    color:pink;
-    transform: translateY(-2px);
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
 }
 
-.checkmark{
-    margin-left: -80px;
-    accent-color: #E8B4B8; 
-    width: 20px; 
-    height: 15px;
-    gap: 10px;
+input:focus {
+    border-color: #bb9992;
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 153, 146, 0.5);
+}
+
+button[type="button"] {
+    background-color: #2c272c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-
-    width: 20px;
-    background-color: #FFF9F8; 
-    border: 2px solid #F4DFDB;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 25px;
-    position: relative;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.email-news{
-    margin-top: 30px;
-    font-size:14px;
+button[type="button"]:hover {
+    background-color: #e8aeb7;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(232, 174, 183, 0.4);
+}
+
+/* Flexbox container to align the checkbox properly */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.checkmark {
+    accent-color: #bb9992; 
+    width: 18px; 
+    height: 18px;
+    cursor: pointer;
+}
+
+.email-news {
+    font-size: 14px;
     font-weight: 400;
     color: #634946;
 }
 
-hr{
-   display: none;
+p.terms {
+    font-size: 12px;
+    color: #A67C77;
+    margin-top: 25px;
 }
 
-footer{
-    margin-top: 65px;
-    
+hr {
+    display: none;
 }
 
+footer {
+    background-color: #2c272c;
+    text-align: center;
+    padding: 20px;
+    color: #f4dfdb;
+    width: 100%;
+}* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 1.2;
+    background-color: #f4dfdb; /* Fallback color */
+    margin: 0;
+}
 
+@font-face {
+  font-family: 'Philosopher-Regular';
+  src: url('Philosopher-Regular.ttf');
+}
+
+.login-page {
+    background-image: url("brownish-pink-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Philosopher-Regular", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Keeps footer at the bottom */
+}
+
+header {
+    background-color: #bb9992;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* New wrapper to center the login box perfectly */
+.login-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.7); 
+    backdrop-filter: blur(10px);          
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 450px; 
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.form-group {
+    text-align: left; 
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {     
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #bb9992;
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 153, 146, 0.5);
+}
+
+button[type="button"] {
+    background-color: #2c272c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 15px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button[type="button"]:hover {
+    background-color: #e8aeb7;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(232, 174, 183, 0.4);
+}
+
+/* Flexbox container to align the checkbox properly */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.checkmark {
+    accent-color: #bb9992; 
+    width: 18px; 
+    height: 18px;
+    cursor: pointer;
+}
+
+.email-news {
+    font-size: 14px;
+    font-weight: 400;
+    color: #634946;
+}
+
+p.terms {
+    font-size: 12px;
+    color: #A67C77;
+    margin-top: 25px;
+}
+
+hr {
+    display: none;
+}
+
+footer {
+    background-color: #2c272c;
+    text-align: center;
+    padding: 20px;
+    color: #f4dfdb;
+    width: 100%;
+}

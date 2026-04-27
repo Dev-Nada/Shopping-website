@@ -1,22 +1,32 @@
-body{
-    font-family:"Philosopher-Regular";
-    font-size:large;
-    line-height: 1.2;
-    margin: auto;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    background-color:white;
-    justify-content: center;
-   
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fallback if Philosopher doesn't load */
+    font-size: large;
+    line-height: 1.2;
+    background-color: white;
+    margin: 0;
 }
 
 @font-face {
-  font-family: 'Philosopher-Regular';
-  src: url('Philosopher-Regular.ttf');
+    font-family: 'Philosopher-Regular';
+    src: url('Philosopher-Regular.ttf');
 }
 
-header{
-    
+.checkout-page {
+    background-image: url("brownish-pink-bg.png");
+    background-color: #f4dfdb; /* Fallback color */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Philosopher-Regular", Arial, sans-serif;
+}
+
+header {
     width: 100%;
     background-color: #bb9992;
     color: white;
@@ -24,32 +34,27 @@ header{
     text-align: center;
     font-size: larger;
     font-weight: bold;
-    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: black;
-  transition: 0.3s;
+    color: black;
+    transition: 0.3s;
+    margin-bottom: 15px;
 }
 
 h2:hover {
-  color: salmon;
-  text-shadow: 0 0 10px pink;
+    color: salmon;
+    text-shadow: 0 0 10px pink;
 }
 
-div{
-    
-    margin: auto;
-    padding: 20px;
-    width:fit-content;
-}
-
-.checkout-page{
-    background-image: url("brownish-pink-bg.png");
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-
+/* Centers the entire form layout */
+#main-checkout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .ship-container,
@@ -63,15 +68,15 @@ div{
     width: 90%;
     max-width: 500px; 
     text-align: left;
-    gap:15px;
+    padding: 30px;
     margin-bottom: 35px;
-
 }
 
-
 label {     
-  font-weight: bold;
-  margin: 5px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 .info,
@@ -80,128 +85,109 @@ input[type="tel"],
 input[type="month"],
 input[type="password"] {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-
-}
-
-.delivery-container div{
-    width:300px;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 15px;
-}
-    
-
-
-.delivery-container div:hover{
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(254, 182, 182, 0.633);
-}
-
-  
-
-
-label.shipping{
-    text-align: left; 
-    width: fit-content;
-    margin: 0 auto;
-    margin-bottom: 5px;
-    padding: 0;
-}
-
-.radio-container1{
-   
-    width:300px;
-    align-items: center;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.radio-container1:hover{
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(254, 182, 182, 0.633);
-}
-
-.radio-container2{
-    
-    width:300px;
-    align-items: center;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.radio-container2:hover{
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(254, 182, 182, 0.633);
-}
-
-div.payment-method{
-    width: 85%;
-}
-
-button {
-    width: 100%;
     padding: 12px;
-    background-color: #e8aeb7;
-    border: none;
-    color: white;
-    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.info:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="month"]:focus,
+input[type="password"]:focus {
+    border-color: #bb9992;
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 153, 146, 0.5);
+}
+
+/* Delivery & Payment Radio Boxes */
+.delivery-container div,
+.radio-container1,
+.radio-container2 {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    border: 1px solid transparent;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
-button:hover{
-   color: rgb(255, 240, 211);
-   transform: translateY(-2px);
+.delivery-container div:hover,
+.radio-container1:hover,
+.radio-container2:hover {
+    border: 1px solid #e8aeb7;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(232, 174, 183, 0.4);
 }
 
-hr.header{
+.delivery-container label,
+.radio-container1 label,
+.radio-container2 label {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+div.payment-method {
+    width: 100%;
+    margin-top: 15px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #2c272c;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #e8aeb7;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(232, 174, 183, 0.5);
+}
+
+hr {
     display: none;
 }
 
-hr.footer{
-    display:contents;
-}
-
-footer{
+footer {
     text-align: center;
     background-color: #2c272c;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 40px;
 }
 
-.rights{
+.rights {
     color: rgb(191, 190, 190);
+    margin-top: 10px;
 }
 
-.contact{
+.contact {
     font-size: 18px;
     color: #f4dfdb;
-    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.contact:hover{
-    color:darksalmon;
+.contact:hover {
+    color: darksalmon;
 }
