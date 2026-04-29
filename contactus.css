@@ -1,0 +1,107 @@
+body{
+  background-color:	#E6C8C3;
+  color: #000000c2;
+  font-family: "Playfair Display", serif;;
+  
+}
+
+
+
+legend {
+  font-weight: bold;
+  color: #d7a9a2; 
+  padding: 0 12px;
+  text-transform: uppercase;
+  font-size: 2.5rem ;
+}
+
+fieldset{
+  border:  2px solid  #180f0c;
+  padding: 40px ;  
+}
+input[type=" text"],
+input[type="email"], 
+input[type="text"],
+textarea{
+  background-color: transparent;
+  border: none ;
+  border-bottom: 2px solid #000000;
+  padding: 30px 20px  ;
+  outline: none;
+  font-size: 14px ;
+}
+
+
+input[type="submit"],textarea{
+  
+  border: 1px;
+  border-radius: 40px;
+  background-color: #d7a9a2;
+  padding: 30px 70px;
+  font-size: 35px;
+ margin: 50px auto;
+
+}
+
+label {
+  color: #000000;
+  
+}
+
+.container{
+  position: relative;
+  width:80%;
+  max-width: 100%;
+  margin: 0 auto ;
+  padding-bottom: 20px ;
+  
+
+}
+.txxt {
+  font-size: 75px ;
+color: rgba(255,255,255,.7);
+
+}
+
+.img{
+  
+  position: absolute;
+  width: 750px;
+  top: 0px;
+  left: 790px;
+  
+}
+
+
+.social-icons {
+    display: flex; 
+    gap: 100px;     
+    margin-top: 20px; 
+}
+
+.social-icons a {
+    color: black;          
+    font-size: 18px;       
+    text-decoration: none; 
+    transition: 0.3s;     }
+
+.social-icons a:hover {
+    color: #555; 
+    
+}
+
+.hello-babe{
+  text-decoration: none;
+  text-align: left;
+  margin-left: 0px ;
+  margin-top: 40px;
+  margin-bottom: 40px ;
+  font-size: 25px;
+}
+
+.hello-babe a{
+  color: #000000 ;
+}
+.hello-babe a:hover{
+  color:#d4a9a9;
+}
