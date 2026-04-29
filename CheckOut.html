@@ -1,112 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <title>CheckOut</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut - Lady Boutique</title>
+    <link rel="stylesheet" href="stylehome.css" />
+  </head>
 
-    <link rel="stylesheet" href="checkout-design.css">
+  <body class="checkout-page">
+    <div id="navbar-placeholder"></div>
 
-    <body class="checkout-page" align=""center>
+    <header>
+      <h1>CheckOut</h1>
+    </header>
 
-        
-            <header>
-                <h1>CheckOut</h1>
-               
-            </header><br>
-            <hr class="header"><br>
   
-        <div class="ship-container">
-            <form>
-                <h2>1. Shipping Info</h2>
-                
-                <label class="shipping">Full Name:</label><br>
-                <input class="info" type="text" name="fullname" placeholder="Full Name" required><br><br>
 
-                <label class="shipping">Phone Number:</label><br>
-                <input class="info" type="tel" name="phone" placeholder="Phone" maxlength="11" required><br><br>
-                
-                <label class="shipping">Address:</label><br>
-                <input class="info" type="text" name="address" placeholder="Address" required><br><br>
+    <form id="main-checkout-form" onsubmit="validateCheckout(event)">
+      <div class="ship-container">
+        <h2>1. Shipping Info</h2>
+        <label class="shipping">Full Name:</label>
+        <input
+          class="info"
+          type="text"
+          name="fullname"
+          placeholder="Full Name"
+          required
+        />
 
-                <label class="shipping">City:</label><br>
-                <input class="info" type="text" name="city" placeholder="City" required>
-               
-         
+        <label class="shipping">Phone Number:</label>
+        <input
+          class="info"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          maxlength="11"
+          required
+        />
 
-            </form>
+        <label class="shipping">Address:</label>
+        <input
+          class="info"
+          type="text"
+          name="address"
+          placeholder="Address"
+          required
+        />
+
+        <label class="shipping">City:</label>
+        <input
+          class="info"
+          type="text"
+          name="city"
+          placeholder="City"
+          required
+        />
+      </div>
+
+      <div class="delivery-container">
+        <h2>2. Delivery</h2>
+        <div>
+          <input
+            type="radio"
+            name="delivery"
+            id="normal"
+            value="normal"
+            checked
+          />
+          <label for="normal"
+            ><strong>Normal Shipping</strong><br />Delivery in 3–5 days
+            ($5.00)</label
+          >
+        </div>
+        <div>
+          <input type="radio" name="delivery" id="fast" value="fast" />
+          <label for="fast"
+            ><strong>Fast Shipping</strong><br />Delivery in 1–2 days
+            ($15.00)</label
+          >
+        </div>
+      </div>
+
+      <div class="payment-container">
+        <h2>3. Payment</h2>
+        <div class="radio-container1">
+          <input
+            type="radio"
+            name="payment"
+            id="cash"
+            value="cash"
+            required
+            checked
+          />
+          <label for="cash">Cash On Delivery</label>
+        </div>
+        <div class="radio-container2">
+          <input type="radio" name="payment" id="credit" value="credit" />
+          <label for="credit">Credit Card</label>
         </div>
 
-        <div class="delivery-container">
-           <form>
-            <h2>2. Delivery</h2>
+        <div class="payment-method">
+          <label>Card Holder Name:</label>
+          <input type="text" name="cardname" placeholder="Card Holder Name" />
 
-    <div>
-        <input type="radio" name="delivery" value="normal" checked>
-        <label>
-        <strong>Normal Shipping</strong><br>
-        Delivery in 3–5 days ($5.00)
-        </label>
-    </div>
+          <label>Card Number:</label>
+          <input
+            type="text"
+            name="cardnumber"
+            placeholder="0000 0000 0000 0000"
+            maxlength="16"
+            pattern="[0-9]{16}"
+          />
 
-<br>
+          <label>Expiry Date:</label>
+          <input type="month" name="expiry" />
 
-    <div>
-        <input type="radio" name="delivery" value="fast">
-        <label>
-        <strong>Fast Shipping</strong><br>
-         Delivery in 1–2 days ($15.00)
-        </label>
-    </div>
+          <label>CVV:</label>
+          <input
+            type="password"
+            name="cvv"
+            maxlength="3"
+            pattern="[0-9]{3}"
+            placeholder="123"
+          />
+        </div>
 
-           </form>
-           </div>
+        <button type="submit">Place Order</button>
+      </div>
+    </form>
 
-           <div class="payment-container">
-            <form>
-                <h2>3. Payment</h2>
-
-            <div class="radio-container1">
-            <input type="radio" name="payment" value="cash" onclick="hideCard()" required>
-            <label>Cash On Delivery</label><br><br>
-            </div>
-
-            <div class="radio-container2">
-            <input type="radio" name="payment" value="credit" onclick="showCard()">
-            <label>Credit Card</label><br><br>
-            </div>
-
-            
-            <div class="payment-method">
-            
-             <label>Card Holder Name:</label><br>
-             <input type="text" name="cardname" placeholder="Card Holder Name"><br><br>
-
-             <label>Card Number:</label><br>
-             <input type="text" name="cardnumber" placeholder="0000 0000 0000 0000" maxlength="16" pattern="[0-9]{16}"><br><br>
-
-             <label>Expiry Date:</label><br>
-             <input type="month" name="expiry"><br><br>
-
-             <label>CVV:</label><br>
-             <input type="password" name="cvv"  maxlength="3" pattern="[0-9]{3}" placeholder="123"><br><br>
-
-            </div>
-
-            <button type="submit">Place Order</button>
-
-            </form>
-           </div>
-
-    </body>
-
-    <hr class="footer"><br>
     <footer>
-        
-          <a href="contact.html" class="contact">Contact Us</a>
-          <p class="rights">© 2026 Lady Boutique. All rights reserved.</p>
-    </footer>
-        
+      <div class="contact">
+        <span>connect with LADY BOUTIQE :</span>
+        <a href="#contact us">
+          <button class="connect-btn">✉ Contact us</button>
+        </a>
+      </div>
+      <div class="social">
+        <a href="#"
+          ><img src="img/face icon.jpeg" alt="Facebook" class="social-media"
+        /></a>
+        <a href="#"
+          ><img src="img/insta icon.jpeg" alt="Instagram" class="social-media"
+        /></a>
+        <a href="#"
+          ><img src="img/X-icon.jpeg" alt="Twitter" class="social-media"
+        /></a>
+        <a href="#"
+          ><img
+            src="img/WhatsApp icon.jpeg"
+            alt="whatsapp"
+            class="social-media"
+        /></a>
+      </div>
 
+      <p>© 2026 Lady Boutique. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

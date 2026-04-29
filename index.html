@@ -7,36 +7,19 @@
     <link rel="Stylesheet" href="stylehome.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li class="drop">
-          <a href="generalcat.html">Category</a>
-          <ul class="drop-content">
-            <li>
-              <a href="">Dresses</a>
-            </li>
-            <li>
-              <a href="">Accessories</a>
-            </li>
-            <li>
-              <a href="New Text Document.html">Makeup</a>
-            </li>
-            <li>
-              <a href="shoes.html">Shoes & Bags</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="cart.html">Basket</a>
-        </li>
-        <li>
-          <a href="">Contact </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="trans-box">
+      <h2>Lady boutiqe</h2>
+      <div class="theme">
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 Theme</button>
+        <a href="login.html">
+          <button class="log-button">
+             👤 Log in
+          </button>
+        </a>
+      </div>
+
+    </div>
+    <div id="navbar-placeholder"></div>
     <section class="About">
       <div id="About">
         <h1>Get the latest trends</h1>
@@ -60,6 +43,7 @@
             <p>Satin Brown Dress</p>
             <p>$80.88</p>
             <p class="star">★ ★ ★ ★ ★</p>
+            <button onclick="addToCart(event)">Add to cart</button>
           </div>
         </div>
 
@@ -69,6 +53,7 @@
             <p>Elegant Black Bag</p>
             <p>$70.50</p>
             <p class="star">★ ★ ★ ☆ ☆</p>
+            <button onclick="addToCart(event)">Add to cart</button>
           </div>
         </div>
 
@@ -78,6 +63,7 @@
             <p>Gold Bloom Earrings</p>
             <p>$54.50</p>
             <p class="star">★ ★ ★ ★ ☆</p>
+            <button onclick="addToCart(event)">Add to cart</button>
           </div>
         </div>
 
@@ -85,8 +71,9 @@
           <img src="img\sandals.jpeg" class="bestimg" />
           <div class="best-text">
             <p>Strappy Sandals</p>
-            <p >$69.00</p>
+            <p>$69.00</p>
             <p class="star">★ ★ ★ ★ ☆</p>
+            <button onclick="addToCart(event)">Add to cart</button>
           </div>
         </div>
       </div>
@@ -95,9 +82,7 @@
       <div class="adv">
         <img src="img/box.png" class="icon-adv" />
         <h3>Easy Return</h3>
-        <p>
-          Our shop gives you an chance to Return your orders
-        </p>
+        <p>Our shop gives you an chance to Return your orders</p>
       </div>
       <div class="adv">
         <img src="img/free-delivery.png" class="icon-adv" />
@@ -107,9 +92,33 @@
       <div class="adv">
         <img src="img/microphone.png" class="icon-adv" />
         <h3>24/7 Support</h3>
-        <p>
-          We always here to help you .
-        </p>
+        <p>We always here to help you .</p>
+      </div>
+    </section>
+    <section class="frame"
+      style="
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        background-color: #efcfc9;
+        margin-top: 20px;
+      "
+    >
+      <div style="text-align: center; width: 100%; max-width: 800px">
+        <h2 style="margin-bottom: 15px; color: #333">Find Us Here</h2>
+        <iframe
+          src="https://maps.google.com/maps?q=Cairo,+Egypt&t=&z=12&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="350"
+          style="
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          "
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
       </div>
     </section>
 
@@ -140,5 +149,6 @@
 
       <p>© 2026 Lady Boutique. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

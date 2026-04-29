@@ -3,116 +3,291 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LADY BOUTIQUE</title>
+    <title>Shoes & Bags - Lady Boutique</title>
     <link rel="stylesheet" href="stylehome.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li class="drop">
-          <a href="generalcat.html">Category</a>
-          <ul class="drop-content">
-            <li>
-              <a href="">Dresses</a>
-            </li>
-            <li>
-              <a href="">Accessories</a>
-            </li>
-            <li>
-              <a href="New Text Document.html">Makeup</a>
-            </li>
-            <li>
-              <a href="shoes.html">Shoes & Bags</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="cart.html">Basket</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="navbar-placeholder"></div>
+    <section style="margin: 20px auto; width: 80%; text-align: center">
+      <h2>Shoe Size Guide</h2>
+      <table
+        border="1"
+        style="
+          width: 100%;
+          border-collapse: collapse;
+          background-color: #fff;
+          margin-top: 10px;
+        "
+      >
+        <tr style="background-color: #ddbeb8">
+          <th>US Size</th>
+          <th>UK Size</th>
+          <th>Europe Size</th>
+          <th>Foot Length (cm)</th>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>4</td>
+          <td>37</td>
+          <td>23.5</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>5</td>
+          <td>38</td>
+          <td>24.1</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>6</td>
+          <td>39</td>
+          <td>25.1</td>
+        </tr>
+      </table>
+    </section>
     <section class="products">
+      <p class="new">High Heels Section</p>
       <div class="product">
-        <img src="high heels.jpeg" />
-        <h3 class="title">High Heels</h3>
+        <img src="Photos/high heels.jpeg" />
+        <h3 class="title">Edgy Heels</h3>
         <p class="price">$50</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="High Heels2.jpeg" />
-        <h3 class="title">High Heels</h3>
+        <img src="Photos/High Heels2.jpeg" />
+        <h3 class="title">Trendy Heels</h3>
         <p class="price">$45</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="High Heels3.jpeg" />
+        <img src="Photos/High Heels3.jpeg" />
         <h3 class="title">High Heels</h3>
         <p class="price">$55</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="High Heels4.jpeg" />
-        <h3 class="title">High Heels</h3>
+        <img src="Photos/High Heels4.jpeg" />
+        <h3 class="title">Fancy Heels</h3>
         <p class="price">$60</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes1.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
-        <p class="price">$35</p>
+        <img src="Photos/High Heels5.jpeg" />
+        <h3 class="title">blue Heels</h3>
+        <p class="price">$50</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes2.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
+        <img src="Photos/High Heels6.jpeg" />
+        <h3 class="title">White Heels</h3>
+        <p class="price">$33</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/High Heels7.jpeg" />
+        <h3 class="title">Brown Heels</h3>
+        <p class="price">$44</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/High Heels15.jpeg" />
+        <h3 class="title">Classic Heels</h3>
+        <p class="price">$50</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/High Heels9.jpeg" />
+        <h3 class="title">Clear Heels</h3>
+        <p class="price">$50</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/High Heels10.jpeg" />
+        <h3 class="title">Gold Heels</h3>
+        <p class="price">$75</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/High Heels11.jpeg" />
+        <h3 class="title">Black Heels</h3>
         <p class="price">$40</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes3.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
-        <p class="price">$32</p>
+        <img src="Photos/High Heels12.jpeg" />
+        <h3 class="title">Burgundy Heels</h3>
+        <p class="price">$60</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Shoes4.jpeg" />
-        <h3 class="title">Sports Shoes</h3>
+        <img src="Photos/High Heels13.jpeg" />
+        <h3 class="title">Cool Heels</h3>
         <p class="price">$30</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag6.jpeg" />
+        <img src="Photos/High Heels14.jpeg" />
+        <h3 class="title">Classy Heels</h3>
+        <p class="price">$70</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <hr />
+      <p class="new">Sneakers Section</p>
+      <div class="product">
+        <img src="Photos/Shoes1.jpeg" />
+        <h3 class="title">Chunky Sneakers</h3>
+        <p class="price">$35</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes2.jpeg" />
+        <h3 class="title">Converse</h3>
+        <p class="price">$40</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes3.jpeg" />
+        <h3 class="title">Samba</h3>
+        <p class="price">$32</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes4.jpeg" />
+        <h3 class="title">Classic Jordan</h3>
+        <p class="price">$30</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes5.jpeg" />
+        <h3 class="title">Modern Sneakers</h3>
+        <p class="price">$50</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes6.jpeg" />
+        <h3 class="title">Funky Jordan</h3>
+        <p class="price">$43</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes7.jpeg" />
+        <h3 class="title">Brown New Balance 530</h3>
+        <p class="price">$60</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes8.jpeg" />
+        <h3 class="title">Minimalist Sneakers</h3>
+        <p class="price">$44</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes9.jpeg" />
+        <h3 class="title">Brown Jordan</h3>
+        <p class="price">$45</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes10.jpeg" />
+        <h3 class="title">Timeless Sneakers</h3>
+        <p class="price">$30</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes11.jpeg" />
+        <h3 class="title">Black Sneakers</h3>
+        <p class="price">$35</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes12.jpeg" />
+        <h3 class="title">Burgundy Converse</h3>
+        <p class="price">$55</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes13.jpeg" />
+        <h3 class="title">Comfortable Sneakers</h3>
+        <p class="price">$42</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Shoes14.jpeg" />
+        <h3 class="title">Soft Sneakers</h3>
+        <p class="price">$50</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <hr />
+      <p class="new">Bags Section</p>
+      <div class="product">
+        <img src="Photos/Bag6.jpeg" />
         <h3 class="title">Modern Bag</h3>
         <p class="price">$20</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag2.jpeg" />
-        <h3 class="title">Modern Bag</h3>
+        <img src="Photos/Bag2.jpeg" />
+        <h3 class="title">Brown Bag</h3>
         <p class="price">$30</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag1.jpeg" />
+        <img src="Photos/Bag1.jpeg" />
         <h3 class="title">Black Bag</h3>
         <p class="price">$25</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag3.jpeg" />
+        <img src="Photos/Bag3.jpeg" />
         <h3 class="title">Burgundy Bag</h3>
         <p class="price">$18</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="Bag7.jpeg" />
+        <img src="Photos/Bag7.jpeg" />
         <h3 class="title">White Bag</h3>
+        <p class="price">$40</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Bag8.jpeg" />
+        <h3 class="title">Fancy Bag</h3>
+        <p class="price">$50</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Bag9.jpeg" />
+        <h3 class="title">Gray Bag</h3>
+        <p class="price">$60</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Bag10.jpeg" />
+        <h3 class="title">Soft Green Bag</h3>
+        <p class="price">$65</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Bag12.jpeg" />
+        <h3 class="title">Blue Bag</h3>
+        <p class="price">$90</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Bag13.jpeg" />
+        <h3 class="title">Purple Bag</h3>
+        <p class="price">$70</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Bag14.jpeg" />
+        <h3 class="title">Off-white Bag</h3>
+        <p class="price">$45</p>
+        <button onclick="addToCart(event)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="Photos/Bag15.jpeg" />
+        <h3 class="title">Night Bag</h3>
         <p class="price">$40</p>
         <button onclick="addToCart(event)">Add to Cart</button>
       </div>
