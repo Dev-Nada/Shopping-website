@@ -1,7 +1,7 @@
 body{
   background-color:	#E6C8C3;
   color: #000000c2;
-  font-family: "Playfair Display", serif;;
+  font-family: "Playfair Display", serif;
   
 }
 
@@ -15,9 +15,19 @@ legend {
   font-size: 2.5rem ;
 }
 
+
+form {
+
+  max-width: 600px;   
+  margin-bottom: 200px;    
+  padding: 0px;            
+  margin-left: 50px;
+  
+}
 fieldset{
   border:  2px solid  #180f0c;
-  padding: 40px ;  
+  padding: 100px ;  
+  width: 540px;
 }
 input[type=" text"],
 input[type="email"], 
@@ -40,11 +50,32 @@ input[type="submit"],textarea{
   padding: 30px 70px;
   font-size: 35px;
  margin: 50px auto;
+ font-family: "Playfair Display", serif ;
+box-shadow: 1px 1px 3px #291c1c ;
+transition: all 0.4s ease-in-out;
+}
 
+input[type="submit"]:hover{
+  background-color: #845959 ;  
+  transform: translateY(-5px);
+ 
+}
+
+
+
+.div1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  
 }
 
 label {
-  color: #000000;
+  color:#000000;
+  width: 100px;
+  font-size: 14px;
+  
   
 }
 
@@ -66,10 +97,10 @@ color: rgba(255,255,255,.7);
 .img{
   
   position: absolute;
-  width: 750px;
+  width: 600px;
   top: 0px;
-  left: 790px;
-  
+  left: 550px;
+  display: block;
 }
 
 
@@ -96,7 +127,7 @@ color: rgba(255,255,255,.7);
   margin-left: 0px ;
   margin-top: 40px;
   margin-bottom: 40px ;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .hello-babe a{
@@ -104,4 +135,6 @@ color: rgba(255,255,255,.7);
 }
 .hello-babe a:hover{
   color:#d4a9a9;
+
 }
+
