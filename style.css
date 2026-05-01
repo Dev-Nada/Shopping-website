@@ -1,0 +1,22 @@
+body{background-color: #5a4634;
+color: whitesmoke;
+font-family: Arial;}
+nav{color: black;
+margin:10 px;}
+nav a{color: whitesmoke;
+margin:10 px;}
+nav a:hover{color: gold;}
+table{border:1px solid white;}
+th{border: 1px solidwhite;}
+td{border:1px solid white;}
+
+input,textarea{margin-bottom:10 px;}
+
+button:hover{background-color: gold;}
+@media(max-width:600px) {
+body{margin:0}
+nav a{display: block;}
+input, textarea{width:100%;}
+table{width:100%}
+}
+
