@@ -1,175 +1,199 @@
-<!DOCTYPE html>
-<head>
-    
+<!doctype html>
+<html>
+  <head>
     <title>Accessories</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylehome.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
 
-    
-</head>
-<body>
-    
-        <h1>Lady Boutique</h1>
-        <nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li class="drop">
-          <a href="#Category">Category</a>
-          <ul class="drop-content">
-            <li>
-              <a href="dresses.html">Dresses</a>
-            </li>
-            <li>
-              <a href="accessories.html">Accessories</a>
-            </li>
-            <li>
-              <a href="makeup.html">makeup</a>
-            </li>
-            <li>
-              <a href="shoes.html">Shoes</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="cart.html">Basket</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <h2 class="text" style="text-align: center">ACCESSORIES</h2>
+    <p class="text" style="text-align: center">
+      YOUR FAVOURITE ACCESSORIES IN ONE PLACE,JUST FOR YOU!
+    </p>
 
-        
-    
-    
-    <h2 class="text" style="text-align: center;">ACCESSORIES</h2>
-    <p class="text" style="text-align: center;">YOUR FAVOURITE ACCESSORIES IN ONE PLACE,JUST FOR YOU!</p>
-    
-
-
-    
     <div class="products">
-        <div class="product">
-        <img src="image/photo_2026-04-24_16-26-47.jpg" width="200" height="200" alt="Necklace">
-        <p class="title" >Stylish and elegant necklace.</p>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-24_16-26-47.jpg"
+          width="200"
+          height="200"
+          alt="Necklace"
+        />
+        <p class="title">Stylish and elegant necklace.</p>
         <p class="price">$29.99</p>
-        <button onclick="addToCart('Necklace', 29.99)">add to cart</button>
-        </div>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
+      <div class="product">
+        <img
+          src="image/photo_2026-04-24_16-26-51.jpg"
+          width="200"
+          height="200"
+          alt="Earrings"
+        />
+        <p class="title">the mermaid necklace</p>
+        <p class="price">$39.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-        <div class="product">
-            <img src="image/photo_2026-04-24_16-26-51.jpg" width="200" height="200" alt="Earrings">
-            <p class="title">the mermaid necklace</p>
-            <p class="price">$39.99</p>
-            <button onclick="addToCart('the mermaid necklace', 39.99)">add to cart</button>
-            </div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-24_16-26-56.jpg"
+          width="200"
+          height="200"
+          alt="Pearl Necklace"
+        />
+        <p class="title">pearl necklace</p>
+        <p class="price">$55.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-            
-            <div class="product">
-                <img src="image/photo_2026-04-24_16-26-56.jpg" width="200" height="200" alt="Pearl Necklace">
-                <p class="title">pearl necklace</p>
-                <p class="price">$55.99</p>
-                <button onclick="addToCart('pearl necklace', 55.99)">add to cart</button>
-</div>
-                
-                <div class="product">
-                    <img src="image/photo_2026-04-24_16-26-59.jpg" width="200" height="200" alt="Bracelet">
-                    <p class="title">minimalist style with a modern touch</p>
-                    <p class="price">$24.99</p>
-                    <button onclick="addToCart('minimalist style with a modern touch', 24.99)">add to cart</button>
-</div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-24_16-26-59.jpg"
+          width="200"
+          height="200"
+          alt="Bracelet"
+        />
+        <p class="title">minimalist style with a modern touch</p>
+        <p class="price">$24.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-                    <div class="product">
-                        <img src="image/photo_2026-04-25_18-39-10.jpg" width="200" height="200" alt="Ring">
-                        <p class="title">our famous tree necklace is back in stock</p>
-                        <p class="price">$34.99</p>
-                        <button onclick="addToCart('our famous tree necklace is back in stock', 34.99)">add to cart</button>
-      </div>              
-                        
-                      
-                        
-                        <div class="product">
-                        
-                            <img src="image/photo_2026-04-25_19-09-59.jpg" width="200" height="200" alt="Earrings">
-                            <p class="title">our best seller,floury earrings</p>
-                            <p class="price">$11.99</p>
-                            <button onclick="addToCart('our best seller,floury earrings', 11.99)">add to cart</button>
-</div>
-                            <div class="product">
-                                <img src="image/photo_2026-04-25_19-10-05.jpg" width="200" height="200" alt="Earrings">
-                                <p class="title">pink twinkle earrings</p>
-                                <p class="price">$14.99</p>
-                                <button onclick="addToCart('pink twinkle earrings', 14.99)">add to cart</button>
-                                </div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_18-39-10.jpg"
+          width="200"
+          height="200"
+          alt="Ring"
+        />
+        <p class="title">our famous tree necklace is back in stock</p>
+        <p class="price">$34.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-                                <div class="product">
-                                    <img src="image/photo_2026-04-25_19-10-11.jpg" width="200" height="200" alt="earring">
-                                    <p class="title">gold hoop earrings</p>
-                                    <p class="price">$18.50</p>
-                                    <button onclick="addToCart('gold hoop earrings', 18.50)">add to cart</button>
-</div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-09-59.jpg"
+          width="200"
+          height="200"
+          alt="Earrings"
+        />
+        <p class="title">our best seller,floury earrings</p>
+        <p class="price">$11.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-10-05.jpg"
+          width="200"
+          height="200"
+          alt="Earrings"
+        />
+        <p class="title">pink twinkle earrings</p>
+        <p class="price">$14.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-                                    <div class="product">
-                                        <img src="image/photo_2026-04-25_19-10-18.jpg" width="200" height="200" alt="Earrings">
-                                        <p class="title">pearl drop earrings</p>
-                                        <p class="price">$22.99</p>
-                                        <button onclick="addToCart('pearl drop earrings', 22.99)">add to cart</button>
-                                        </div>
-                                        <div class="product">
-                                            <img src="image/photo_2026-04-25_19-10-16.jpg"width="200"height="200" alt="Earrings">
-                                            <p class="title">cherry earrings</p>
-                                            <p class="price">$10.00</p>
-                                            <button onclick="addToCart('cherry earrings', 10.00)">add to cart</button>
-                                            </div>
-                                            
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-10-11.jpg"
+          width="200"
+          height="200"
+          alt="earring"
+        />
+        <p class="title">gold hoop earrings</p>
+        <p class="price">$18.50</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-10-18.jpg"
+          width="200"
+          height="200"
+          alt="Earrings"
+        />
+        <p class="title">pearl drop earrings</p>
+        <p class="price">$22.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-10-16.jpg"
+          width="200"
+          height="200"
+          alt="Earrings"
+        />
+        <p class="title">cherry earrings</p>
+        <p class="price">$10.00</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-                                    
-                                            <div class="product">
-                                                <img src="image/photo_2026-04-25_19-50-51.jpg" width="200" height="200" alt="Bracelet">
-                                                <p class="title">warm golden watch</p>
-                                                <p class="price">$49.99</p>
-                                                <button onclick="addToCart('warm golden watch', 49.99)">add to cart</button>
-</div>
-                                                <div class="product">
-                                                    <img src="image/photo_2026-04-25_19-50-58.jpg" width="200" height="200" alt="Bracelet">
-                                                    <p class="title">a beautiful pearly watch</p>
-                                                    <p class="price">$35.99</p>
-                                                    <button onclick="addToCart('a beautiful pearly watch', 35.99)">add to cart</button>
-</div>
-                                                    <div class="product">
-                                                        <img src="image/photo_2026-04-25_19-51-00.jpg" width="200" height="200" alt="Bracelet">
-                                                        <p class="title">minimalist watch</p>
-                                                        <p class="price">$77.99</p>
-                                                        <button onclick="addToCart('minimalist watch', 77.99)">add to cart</button>
-</div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-50-51.jpg"
+          width="200"
+          height="200"
+          alt="Bracelet"
+        />
+        <p class="title">warm golden watch</p>
+        <p class="price">$49.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-50-58.jpg"
+          width="200"
+          height="200"
+          alt="Bracelet"
+        />
+        <p class="title">a beautiful pearly watch</p>
+        <p class="price">$35.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-51-00.jpg"
+          width="200"
+          height="200"
+          alt="Bracelet"
+        />
+        <p class="title">minimalist watch</p>
+        <p class="price">$77.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-                                                        <div class="product">
-                                                            <img src="image/photo_2026-04-25_19-51-02.jpg" width="200" height="200" alt="Bracelet">
-                                                            <p class="title">rose gold watch</p>
-                                                            <p class="price">$45.99</p>
-                                                            <button onclick="addToCart('rose gold watch', 45.99)">add to cart</button>
-</div>
-                                                            <div class="product">
-                                                                <img src="image/b.jpg" width="200" height="200" alt="Bracelet">
-                                                                <p class="title">pearl bracelet</p>
-                                                                <p class="price">$28.50</p>
-                                                                <button onclick="addToCart('pearl bracelet', 28.50)">add to cart</button>
-                                                                </div>
-                                                                
+      <div class="product">
+        <img
+          src="image/photo_2026-04-25_19-51-02.jpg"
+          width="200"
+          height="200"
+          alt="Bracelet"
+        />
+        <p class="title">rose gold watch</p>
+        <p class="price">$45.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
+      <div class="product">
+        <img src="image/b.jpg" width="200" height="200" alt="Bracelet" />
+        <p class="title">pearl bracelet</p>
+        <p class="price">$28.50</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
 
-                                                                <div class="product">
-                                                                    <img src="image/b2.jpg" width="200" height="200" alt="Bracelet">
-                                                                    <p class="title">floury bracelet</p>
-                                                                    <p class="price">$32.99</p>
-                                                                    <button onclick="addToCart('floury bracelet', 32.99)">add to cart</button>
-</div>
-</div>
-  <footer>
-     <div class="contact">
+      <div class="product">
+        <img src="image/b2.jpg" width="200" height="200" alt="Bracelet" />
+        <p class="title">floury bracelet</p>
+        <p class="price">$32.99</p>
+        <button onclick="addToCart(event)">add to cart</button>
+      </div>
+    </div>
+    <footer>
+      <div class="contact">
         <span>connect with LADY BOUTIQE :</span>
-        <a href="#contact us">
+        <a href="contactus.html">
           <button class="connect-btn">✉️ Contact us</button>
         </a>
       </div>
@@ -192,8 +216,7 @@
       </div>
 
       <p>© 2026 Lady Boutique. All rights reserved.</p>
-
-  </footer>
-  <script src="script.js"></script>
-</body>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

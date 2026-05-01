@@ -10,10 +10,10 @@ const myNavbar = `
           <a href="generalcat.html">Category</a>
           <ul class="drop-content">
             <li>
-              <a href="">Dresses</a>
+              <a href="dresses.html">Dresses</a>
             </li>
             <li>
-              <a href="">Accessories</a>
+              <a href="accessories.html">Accessories</a>
             </li>
             <li>
               <a href="New Text Document.html">makeup</a>
@@ -27,7 +27,7 @@ const myNavbar = `
           <a href="cart.html">Basket</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="contactus.html">Contact</a>
         </li>
       </ul>
     </nav>
