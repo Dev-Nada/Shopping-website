@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+ 
 }
 
 body {
@@ -9,7 +10,15 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family:"Philosopher-Regular";
 }
+
+@font-face {
+  font-family: 'Philosopher-Regular';
+  src: url('Philosopher-Regular.ttf');
+}
+
+
 nav {
   width: 95%;
   margin: 5px auto;
@@ -83,7 +92,7 @@ a {
   gap: 20px;
 }
 #About {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Philospher-Regular";
   color: black;
   width: 50%;
   display: flex;
@@ -94,14 +103,14 @@ a {
 #About h1 {
   text-align: center;
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Philospher-Regular";
   color: black;
   padding-left: 20px;
 }
 #About p {
   font-size: 15px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Philospher-Regular";
   color: black;
   padding-bottom: 20px;
 }
@@ -123,7 +132,7 @@ a {
   transform: scale(1.1);
 }
 .line {
-  font-family: sans-serif;
+  font-family: "Philospher-Regular";
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -294,7 +303,7 @@ footer p {
 /* الفيلتر بار اللي فوق في صفحه سلمى*/
 .cart-body {
   background-color: #cbaba5;
-  font-family: Arial;
+  font-family: "Philospher-Regular";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -417,7 +426,7 @@ footer p {
 .cart-sec h2 {
   text-align: center;
   font-size: 60px;
-  font-family: sans-serif;
+  font-family: "Philospher-Regular";
 }
 .cart-box {
   display: flex;
