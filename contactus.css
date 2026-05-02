@@ -5,23 +5,32 @@ body {
 }
 
 legend {
+  display: block;
+  text-align: left;
   font-weight: bold;
   color: #d7a9a2;
-  padding: 0 12px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
+  width: auto;
+}
+nav {
+  margin: 100px;
 }
 
 form {
-  max-width: 600px;
-  margin-bottom: 200px;
-  padding: 0px;
-  margin-left: 50px;
+  max-width: 100%;
+  width: 500px;
+  margin: 0 auto 200px auto;
+  padding: 0 15px;
+  
+
 }
 fieldset {
+  margin: auto ;
   border: 2px solid #180f0c;
-  padding: 100px;
-  width: 540px;
+  padding: 20px;
+  width: 90%;
 }
 input[type=" text"],
 input[type="email"],
@@ -29,10 +38,13 @@ input[type="text"],
 textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #000000;
-  padding: 30px 20px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 20px;
+display: block;
+  padding: 0px 20px;
   outline: none;
-  font-size: 14px;
+  font-size :1.5rem;
+  width: 80%;
 }
 
 input[type="submit"],
@@ -66,22 +78,27 @@ label {
 }
 
 .container {
+  background-color: #845959 ;
   position: relative;
-  width: 80%;
+  width: 90%;
+  height: 300px;
   max-width: 100%;
-  margin: 0 auto;
-  padding-bottom: 20px;
+  margin: auto;
+  background-image: url('IMG-20260427-WA0066.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 1px 3px #191111;
 }
 .txxt {
-  font-size: 75px;
+  text-align: center;
+  font-size: 4vw;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .img {
-  position: absolute;
-  width: 600px;
+  height: auto;
+  max-width:100%;
   top: 0px;
-  left: 550px;
   display: block;
 }
 
@@ -119,6 +136,7 @@ label {
 }
 footer {
   background-color: #362e36;
+  width:100%;
 }
 .contact {
   display: flex;
@@ -212,6 +230,7 @@ a {
   color: #000;
   cursor: pointer;
 }
+
 body.dark-mode {
   background-color: #310404;
   color: white;
@@ -245,4 +264,4 @@ input[type="text"],
 textarea {
   
   border-bottom: 2px solid #f4dfdb;
-}
+  }
