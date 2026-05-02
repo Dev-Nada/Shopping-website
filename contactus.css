@@ -66,22 +66,23 @@ label {
 }
 
 .container {
+  background-color: #bd6d6d ;
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding-bottom: 20px;
+  box-shadow: 1px 1px 3px #191111;
 }
 .txxt {
-  font-size: 75px;
+  text-align: center;
+  font-size: 4rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .img {
-  position: absolute;
-  width: 600px;
+   width:100%;
   top: 0px;
-  left: 550px;
   display: block;
 }
 
@@ -212,3 +213,5 @@ a {
   color: #000;
   cursor: pointer;
 }
+
+
