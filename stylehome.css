@@ -104,6 +104,7 @@ a {
   text-align: center;
   font-size: 40px;
   font-family: "Philospher-Regular";
+  letter-spacing: 2px;
   color: black;
   padding-left: 20px;
 }
@@ -211,6 +212,11 @@ a {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
+
+.adv-text {
+  padding-top: 15px;
+}
+
 .adv:hover {
   transform: translateY(-15px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
