@@ -9,15 +9,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Philosopher-Regular";
 }
-
-@font-face {
-  font-family: 'Philosopher-Regular';
-  src: url('Philosopher-Regular.ttf');
-}
-
-
 nav {
   width: 95%;
   margin: 5px auto;
@@ -91,7 +83,7 @@ a {
   gap: 20px;
 }
 #About {
-  font-family: "Philosopher-Regular";
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
   width: 50%;
   display: flex;
@@ -102,8 +94,7 @@ a {
 #About h1 {
   text-align: center;
   font-size: 40px;
-  font-family: "Philosopher-Regular";
-  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   color: black;
   padding-left: 20px;
 }
@@ -113,7 +104,6 @@ a {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   padding-bottom: 20px;
-  padding-top: 10px;
 }
 /* BIG BUTTON FOR ABOUT SECTION */
 .shop {
@@ -212,12 +202,6 @@ a {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-
-.adv-text {
-  padding-top: 15px;
-}
-
-
 .adv:hover {
   transform: translateY(-15px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
@@ -399,7 +383,7 @@ footer p {
 }
 .product p {
   font-size: 17px;
-  font-family: "Philosopher-Regular";
+  font-family: Arial, Helvetica, sans-serif;
 }
 .product button {
   background-color: #2c272c;
@@ -1093,8 +1077,6 @@ button[type="submit"]:hover {
 hr {
   display: none;
 }
-
-
 /*shoes page design ------------------------------------------------------------------------------------------------*/
 hr {
   width: 100%;
@@ -1105,6 +1087,9 @@ hr {
   text-align: center;
   font-size: 30px;
   color: #2c272c;
+}
+td,th{
+  background-color: #ddbeb8
 }
 /* NEW THEME TOGGLE BUTTON CSS--------------------------------------------------------- */
 .trans-box {
@@ -1143,47 +1128,27 @@ hr {
 
 /* DARK MODE STYLES */
 body.dark-mode {
-  background-color: #262424;
-  color: #f5f5f5;
+  background-color: #310404;
+  color: white;
 }
-
 body.dark-mode nav ul {
-  background-color: #332f2f;
+  background-color: #450606cc;
 }
-
 body.dark-mode a,
 body.dark-mode p,
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3 {
-  color: #f5f5f5;
+  color: white;
 }
-
 body.dark-mode .product,
 body.dark-mode .best-item {
   background-color: #4a3f4a;
-  color: #f5f5f5;
+  color: white;
+}
+body.dark-mode .theme-toggle {
+  background: white;
+  color: black;
+  border: 2px solid #5a4b5a;
 }
 
-body.dark-mode button,
-body.dark-mode .theme-toggle,
-body.dark-mode .log-button {
-  background-color: #da7e7e;
-  color: #f5f5f5;
-  border: 1px solid #5a4b5a;
-}
-
-body.dark-mode button:hover {
-  background-color: #e8aeb7;
-  color: #262424;
-}
-
-body.dark-mode .about{
-  color: #f5f5f5;
-}
-
-body.dark-mode #About,
-body.dark-mode #About h1,
-body.dark-mode #About p {
-  color: #f5f5f5;
-}

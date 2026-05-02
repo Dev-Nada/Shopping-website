@@ -5,32 +5,23 @@ body {
 }
 
 legend {
-  display: block;
-  text-align: left;
   font-weight: bold;
   color: #d7a9a2;
-  padding: 0 10px;
+  padding: 0 12px;
   text-transform: uppercase;
-  font-size: 1.7rem;
-  width: auto;
-}
-nav {
-  margin: 100px;
+  font-size: 2.5rem;
 }
 
 form {
-  max-width: 100%;
-  width: 500px;
-  margin: 0 auto 200px auto;
-  padding: 0 15px;
-  
-
+  max-width: 600px;
+  margin-bottom: 200px;
+  padding: 0px;
+  margin-left: 50px;
 }
 fieldset {
-  margin: auto ;
   border: 2px solid #180f0c;
-  padding: 20px;
-  width: 90%;
+  padding: 100px;
+  width: 540px;
 }
 input[type=" text"],
 input[type="email"],
@@ -38,13 +29,10 @@ input[type="text"],
 textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #000000;
-  margin-bottom: 20px;
-display: block;
-  padding: 0px 20px;
+  border-bottom: 2px solid #000000;
+  padding: 30px 20px;
   outline: none;
-  font-size :1.5rem;
-  width: 80%;
+  font-size: 14px;
 }
 
 input[type="submit"],
@@ -78,27 +66,22 @@ label {
 }
 
 .container {
-  background-color: #845959 ;
   position: relative;
-  width: 90%;
-  height: 300px;
+  width: 80%;
   max-width: 100%;
-  margin: auto;
-  background-image: url('img/IMG-20260427-WA0066.jpg');
-  background-size: cover;
-  background-position: center;
-  box-shadow: 1px 1px 3px #191111;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 .txxt {
-  text-align: center;
-  font-size: 4vw;
+  font-size: 75px;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .img {
-  height: auto;
-  max-width:100%;
+  position: absolute;
+  width: 600px;
   top: 0px;
+  left: 550px;
   display: block;
 }
 
@@ -136,7 +119,6 @@ label {
 }
 footer {
   background-color: #362e36;
-  width:100%;
 }
 .contact {
   display: flex;
@@ -230,4 +212,37 @@ a {
   color: #000;
   cursor: pointer;
 }
-
+body.dark-mode {
+  background-color: #310404;
+  color: white;
+}
+body.dark-mode nav ul {
+  background-color: #450606cc;
+}
+body.dark-mode a,
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: white;
+}
+body.dark-mode .product,
+body.dark-mode .best-item {
+  background-color: #4a3f4a;
+  color: white;
+}
+body.dark-mode .theme-toggle {
+  background: white;
+  color: black;
+  border: 2px solid #5a4b5a;
+}
+label {
+  color: white;
+}
+input[type=" text"],
+input[type="email"],
+input[type="text"],
+textarea {
+  
+  border-bottom: 2px solid #f4dfdb;
+}
