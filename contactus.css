@@ -12,21 +12,21 @@ legend {
   font-size: 2.5rem;
 }
 
-form.contact-form {
+form {
   max-width: 600px;
   margin-bottom: 200px;
   padding: 0px;
   margin-left: 50px;
 }
-fieldset.contact-fieldset {
+fieldset {
   border: 2px solid #180f0c;
   padding: 100px;
   width: 540px;
 }
-.div1 input[type=" text"],
-.div1 input[type="email"],
-.div1 input[type="text"],
-.div1 textarea {
+ input[type=" text"],
+ input[type="email"],
+ input[type="text"],
+ textarea {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
@@ -35,8 +35,8 @@ fieldset.contact-fieldset {
   font-size: 14px;
 }
 
-.contact-submit input[type="submit"],
-.div1 textarea {
+ input[type="submit"],
+ textarea {
   border: 1px;
   border-radius: 40px;
   background-color: #d7a9a2;
@@ -59,13 +59,13 @@ input[type="submit"]:hover {
   margin-bottom: 20px;
 }
 
-.div1 label {
+ label {
   color: #000000;
   width: 100px;
   font-size: 14px;
 }
 
-.contact-container {
+.container {
   position: relative;
   width: 80%;
   max-width: 100%;
@@ -77,7 +77,7 @@ input[type="submit"]:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.contact-img {
+.img {
   position: absolute;
   width: 600px;
   top: 0px;
@@ -85,20 +85,20 @@ input[type="submit"]:hover {
   display: block;
 }
 
-.contact-social-icons {
+.social-icons {
   display: flex;
   gap: 100px;
   margin-top: 20px;
 }
 
-.contact-social-icons a {
+.social-icons a {
   color: black;
   font-size: 18px;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.contact-social-icons a:hover {
+.social-icons a:hover {
   color: #555;
 }
 
