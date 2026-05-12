@@ -30,6 +30,12 @@ const myNavbar = `
           <a href="contactus.html">Contact</a>
         </li>
       </ul>
+      <div id="cart-icon">
+        <a href="cart.html">
+          <img src="images/shopping-bag.png" class="cart" alt="Cart"> 
+        </a>
+        <span class="num-cart"></span>     
+      </div>
     </nav>
 `;
 
