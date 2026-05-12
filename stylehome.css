@@ -1,3 +1,5 @@
+/*All of the team*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -115,7 +117,6 @@ a {
   color: black;
   padding-bottom: 20px;
 }
-/* BIG BUTTON FOR ABOUT SECTION */
 .shop {
   background-color: #2c272c;
   text-align: center;
@@ -155,14 +156,14 @@ a {
 .best-item {
   flex-basis: 280px;
   min-width: 250px;
-  height: 440px; /* Made slightly taller to fit the button */
+  height: 440px; 
   border-radius: 12px;
   overflow: hidden;
   background-color: #f4dfdb;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center; /* Centers everything inside */
+  align-items: center; 
   box-shadow: 0px 10px 19px rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
   padding-bottom: 15px;
@@ -177,7 +178,6 @@ a {
 .best-item p {
   margin: 0;
 }
-/* NORMAL SIZED BUTTON FOR HOMEPAGE PRODUCTS */
 .best-item button {
   background-color: #2c272c;
   color: white;
@@ -226,7 +226,6 @@ a {
   width: 50px;
   filter: none;
 }
-/* footer FOR ALL PAGES-------------------------------------------*/
 footer {
   background-color: #362e36;
 }
@@ -271,8 +270,6 @@ footer p {
   margin-left: 20px;
   margin-bottom: 20px;
 }
-/*نهاية صفحة الهوم --------------------------------------------- --------------------------------------------------- */
-/*قسم اللينكات في صفحة الجينيرال كاتيجوري--------------------- -----------------------------------------------*/
 .icon-home {
   width: 50px;
 }
@@ -306,7 +303,6 @@ footer p {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   border-radius: 14px;
 }
-/* الفيلتر بار اللي فوق في صفحه سلمى*/
 .cart-body {
   background-color: #cbaba5;
   font-family: "Philospher-Regular";
@@ -369,8 +365,6 @@ footer p {
   transform: scale(1.05);
   background-color: #333;
 }
-/*نهاية الفلتر بار------------------------------------- */
-/*---------------------------------------------------------------------------الديزاين  لكل صفح الكاتيجوري*/
 .products {
   display: flex;
   justify-content: space-around;
@@ -422,7 +416,6 @@ footer p {
   transition: 0.3s ease-in-out;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
-/*صفحه الباسكت-------------------------------------------------------------------------------------------------------*/
 .cart-sec {
   width: 90%;
   height: 100%;
@@ -536,9 +529,7 @@ footer p {
   z-index: 10;
   transform: scale(1.05);
 }
-/*نهاية صفحة الكارت------------------------------------------------------------------------------------------------*/
 @media (max-width: 800px) {
-  /*responsive*/
   nav li {
     font-size: 14px;
   }
@@ -637,7 +628,6 @@ footer p {
     margin: 5px auto;
   }
 }
-/*login page design-------------------------------------------------------------------------------------------------*/
 @font-face {
   font-family: "Philosopher-Regular";
   src: url("Philosopher-Regular.ttf");
@@ -651,7 +641,7 @@ footer p {
   font-family: "Philosopher-Regular", Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Keeps footer at the bottom */
+  min-height: 100vh; 
 }
 
 header {
@@ -663,7 +653,6 @@ header {
   width: 100%;
 }
 
-/* New wrapper to center the login box perfectly */
 .login-wrapper {
   flex: 1;
   display: flex;
@@ -747,7 +736,6 @@ button[type="button"]:hover {
   box-shadow: 0 6px 15px rgba(232, 174, 183, 0.4);
 }
 
-/* Flexbox container to align the checkbox properly */
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -805,7 +793,7 @@ footer {
   font-family: "Philosopher-Regular", Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Keeps footer at the bottom */
+  min-height: 100vh; 
 }
 
 header {
@@ -817,7 +805,6 @@ header {
   width: 100%;
 }
 
-/* New wrapper to center the login box perfectly */
 .login-wrapper {
   flex: 1;
   display: flex;
@@ -901,7 +888,6 @@ header {
   box-shadow: 0 6px 15px rgba(232, 174, 183, 0.4);
 }
 
-/* Flexbox container to align the checkbox properly */
 .checkbox-container {
   display: flex;
   align-items: center;
@@ -932,7 +918,6 @@ p.terms {
 hr {
   display: none;
 }
-/*Check out page------------------------------------------------------------------------------------------------------*/
 .checkout-page {
   font-family: "Philosopher-Regular", sans-serif;
   font-size: large;
@@ -980,7 +965,6 @@ div.payment-method {
   margin-top: 15px;
 }
 
-/* Centers the entire form layout in check out page*/
 #main-checkout-form {
   display: flex;
   flex-direction: column;
@@ -1036,7 +1020,6 @@ input[type="password"]:focus {
   box-shadow: 0 0 8px rgba(187, 153, 146, 0.5);
 }
 
-/* Delivery & Payment Radio Boxes */
 .delivery-container div,
 .radio-container1,
 .radio-container2 {
@@ -1093,7 +1076,6 @@ button[type="submit"]:hover {
 hr {
   display: none;
 }
-/*shoes page design ------------------------------------------------------------------------------------------------*/
 hr {
   width: 100%;
   margin-top: 50px;
@@ -1108,7 +1090,6 @@ td,th{
   background-color: #ddbeb8;
 }
 
-/* NEW THEME TOGGLE BUTTON CSS--------------------------------------------------------- */
 .trans-box {
   display: flex;
   justify-content: space-between;
@@ -1143,7 +1124,6 @@ td,th{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* DARK MODE STYLES */
 body.dark-mode{
   background-color: #310404;
   color: white;

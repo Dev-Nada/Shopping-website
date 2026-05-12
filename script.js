@@ -1,5 +1,5 @@
-// --- NAVBAR INJECTION ---
-// This automatically puts your menu on every page!
+// Mariam
+
 const myNavbar = `
     <nav>
       <ul>
@@ -38,17 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (navPlaceholder) {
     navPlaceholder.innerHTML = myNavbar;
   }
-  updateCounter(); // Make sure the badge loads correctly when the nav appears
+  updateCounter(); 
 });
 
-// --- CART LOGIC ---
 function addToCart(event) {
-  // Find the closest product card (works for both category pages and homepage)
   const card =
     event.target.closest(".product") || event.target.closest(".best-item");
   if (!card) return;
 
-  // Find the title and price (handles both class names and plain p tags)
   let titleEl =
     card.querySelector(".title") || card.querySelector("p:first-of-type");
   let priceEl =
@@ -58,10 +55,8 @@ function addToCart(event) {
   const price = priceEl ? priceEl.innerText : "$0.00";
   const img = card.querySelector("img").getAttribute("src");
 
-  // Get cart from storage or create empty array
   let cart = JSON.parse(localStorage.getItem("basket")) || [];
 
-  // Check if it exists
   const exist = cart.find((item) => item.title === title);
   if (exist) {
     exist.quantity += 1;
@@ -69,11 +64,9 @@ function addToCart(event) {
     cart.push({ title, price, img, quantity: 1 });
   }
 
-  // SAVE FIRST
   localStorage.setItem("basket", JSON.stringify(cart));
   updateCounter();
 
-  // THEN ASK TO REDIRECT
   if (
     confirm(
       "Item added! Do you want to go to the cart now? \n(Click OK for Cart, Cancel to keep shopping)",
@@ -86,8 +79,8 @@ function addToCart(event) {
 function updateCounter() {
   let cart = JSON.parse(localStorage.getItem("basket")) || [];
   const count = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const badges = document.querySelectorAll(".num-cart"); // Use querySelectorAll in case there are multiple
-
+  const badges = document.querySelectorAll(".num-cart"); 
+  
   badges.forEach((badge) => {
     if (count > 0) {
       badge.innerText = count;
@@ -100,14 +93,13 @@ function updateCounter() {
 
 function buildCart() {
   const container = document.querySelector(".cart-cont");
-  if (!container) return; // Stop if not on the cart page
-
+  if (!container) return; 
+  
   let cart = JSON.parse(localStorage.getItem("basket")) || [];
   container.innerHTML = "";
   let total = 0;
 
   cart.forEach((item, index) => {
-    // Remove the $ and parse as float
     const priceNum = parseFloat(item.price.replace("$", ""));
     total += priceNum * item.quantity;
 
@@ -159,7 +151,6 @@ function deleteItem(index) {
   buildCart();
 }
 
-// --- CATEGORY FILTER ---
 function filter(category) {
   let search = document.querySelectorAll(".product");
   search.forEach((product) => {
@@ -175,7 +166,6 @@ function filter(category) {
   });
 }
 
-// --- CHECKOUT VALIDATION ---
 function validateCheckout(event) {
   event.preventDefault();
 
@@ -204,7 +194,6 @@ function validateCheckout(event) {
   }
 }
 
-// --- DARK MODE TOGGLE ---
 function toggleTheme() {
   document.body.classList.toggle("dark-mode");
   if (document.body.classList.contains("dark-mode")) {
@@ -214,16 +203,12 @@ function toggleTheme() {
   }
 }
 
-// --- ON PAGE LOAD ---
 window.onload = function () {
-  // Apply Theme
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
   }
-  // Load Cart if on Cart Page
   if (document.querySelector(".cart-cont")) {
     buildCart();
   }
-  // Always update counter on load
   updateCounter();
 };
