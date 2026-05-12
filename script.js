@@ -29,7 +29,6 @@ const myNavbar = `
         <li>
           <a href="contactus.html">Contact</a>
         </li>
-        </li>
         <li style="position: relative; margin-left: auto;">
           <a href="cart.html" style="font-size: 24px; padding: 5px 15px;">
             🛍️
